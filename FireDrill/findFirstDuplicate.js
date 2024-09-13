@@ -7,7 +7,6 @@ function findFirstDuplicate(arr){
 	
 	for (let outIndex = 0; outIndex < arr.length; outIndex++ ){
 
-		//for (let index = outIndex; index < arr[outIndex + 1]; index++ ){
 		for (let index = 1; index < arr.length; index++ ){
 			if (outIndex == index){
 				continue;
@@ -15,7 +14,6 @@ function findFirstDuplicate(arr){
 
 			if (arr[outIndex] == arr[outIndex + 1] || arr[outIndex] == arr[index]){
 				store.push(arr[outIndex]);
-				//break;
 			}
 		}
 		
@@ -28,7 +26,6 @@ function findFirstDuplicate(arr){
 }
 
 
-console.log("stuufbjbjbj" + " " + findFirstDuplicate(arr))
 
 
 module.exports = {findFirstDuplicate};
